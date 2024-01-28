@@ -144,4 +144,31 @@ body {
     width: 100%;
     bottom: 0;
   }
+
+  /* Media Query */
+
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 10px;
+    }
+  
+    input,
+    textarea {
+      padding: 10px;
+    }
+    
+    section#contact {
+      padding: 20px;
+    }
+  }
   
