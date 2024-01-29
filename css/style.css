@@ -1,174 +1,209 @@
-/* General reset styles */
+/* Reset de Estilos y Fuentes */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* General background */
-    color: #333; /* General text color */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Negro */
+  color: #fff; /* Texto blanco */
+}
+
+/* Font de los h */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del Encabezado */
+header {
+  background-color: #ff6600; /* Naranja */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos del Logotipo */
+.logo img {
+  max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+/* Estilos del Texto en el Encabezado */
+h1, p {
+  margin: 10px 0;
+}
+
+/* Estilos de la Barra de Navegación */
+nav {
+  background-color: #000; /* Negro */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555; /* Gris oscuro */
+}
+
+/* Estilos del Carrusel */
+#carouselExampleInterval {
+  background-color: #ff6600;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+  max-height: 75%;
+  margin: 35px;
+  max-width: 75%;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  width: 8%;
+}
+
+.carousel img {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 40px;
+}
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-form h2 {
+  color: #ff6600;
+}
+
+.contact-form p {
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #ff6600; /* Naranja */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc5500; /* Naranja oscuro */
+}
+
+/* Estilos del Pie de Página */
+footer {
+  background-color: #000; /* Negro */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media Queries */
+/* Media Query para dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+  .carousel img {
+    height: auto;
+    margin: 50px;
+    padding: 50px;
   }
-  
-  /* Header styles */
+
   header {
-    background-color: #ff6600; /* Orange */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
-  
-  /* Navigation bar styles */
-  nav {
-    background-color: #333; /* Black */
+
+  nav li a {
+    padding: 10px 12px;
   }
-  
-  /* Navigation list styles */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+  section#home {
+    padding: 10px;
   }
-  
-  /* Navigation list item styles */
-  li {
-    float: left;
-  }
-  
-  /* Navigation link styles */
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Navigation link hover effect */
-  li a:hover {
-    background-color: #555; /* Dark grey */
-  }
-  
-  /* General section styles */
+
   section {
-    padding: 40px;
+    padding: 10px;
   }
-  
-  /* Hero section styles */
-  .hero {
-    text-align: center;
-  }
-  
-  /* Highlighted button styles */
-  .highlight-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6600; /* Orange */
-    color: #fff; /* White text */
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 20px;
-  }
-  
-  /* Highlighted button hover effect */
-  .highlight-button:hover {
-    background-color: #cc5500; /* Darker Orange */
-  }
-  
-  /* Service section styles */
-  .service {
-    margin-bottom: 30px;
-  }
-  
-  /* Contact form styles */
-  section#contact {
-    padding: 60px;
-    text-align: center;
-  }
-  
+
   .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 10px;
   }
-  
-  .contact-form h2 {
-    color: #ff6600; /* Naranja */
-  }
-  
-  .contact-form p {
-    color: #555; /* Gris oscuro */
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 16px;
-  }
-  
-  button {
-    background-color: #ff6600; /* Naranja */
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #cc5500; /* Naranja oscuro */
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333; /* Black */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
+}
+
+/* Media Query para dispositivos de pantalla aún más pequeña */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 5px;
   }
 
-  /* Media Query */
-
-  @media (max-width: 768px) {
-    .contact-form {
-      padding: 20px;
-    }
-  
-    button {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .contact-form {
-      padding: 10px;
-    }
-  
-    input,
-    textarea {
-      padding: 10px;
-    }
-    
-    section#contact {
-      padding: 20px;
-    }
-  }
-  
+}
