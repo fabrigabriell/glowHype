@@ -1,6 +1,6 @@
 /* Reset de Estilos y Fuentes */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #000; /* Negro */
@@ -9,7 +9,27 @@ body {
 
 /* Font de los h */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+/* Service */
+
+.h3Service {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline #ff6600 2px;
+}
+
+.paragraphService {
+  justify-content: left;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.h4Service {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /* Estilos del Encabezado */
@@ -158,6 +178,11 @@ button {
 
 button:hover {
   background-color: #cc5500; /* Naranja oscuro */
+}
+
+.textService{
+  justify-content: left;
+
 }
 
 /* Estilos del Pie de Página */
