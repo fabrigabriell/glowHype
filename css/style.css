@@ -1,10 +1,15 @@
 /* Reset de Estilos y Fuentes */
 body {
+  cursor: url(../img/cursor.cur), auto;
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #000; /* Negro */
   color: #fff; /* Texto blanco */
+}
+
+a, label, textarea, button {
+  cursor: url(../img/pointer1.cur), auto;
 }
 
 /* Font de los h */
