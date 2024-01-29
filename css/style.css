@@ -179,8 +179,13 @@ footer {
     padding: 50px;
   }
 
-  header {
-    padding: 10px;
+
+  ul.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
   }
 
   nav li a {
