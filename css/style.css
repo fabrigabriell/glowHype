@@ -8,7 +8,7 @@ body {
   color: #fff; /* Texto blanco */
 }
 
-a, label, textarea, button {
+.carousel-control, a, label, textarea, span {
   cursor: url(../img/pointer1.cur), auto;
 }
 
@@ -84,7 +84,7 @@ li a:hover {
 
 /* Estilos del Carrusel */
 #carouselExampleInterval {
-  background-color: #ff6600;
+  background-color: white;
   overflow: hidden;
 }
 

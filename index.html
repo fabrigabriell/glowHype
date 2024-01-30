@@ -57,14 +57,14 @@
   <!-- Sección Home con Carrusel de Clientes -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2250">
-        <img src="img/logo1.jpg" class="d-block mx-auto" alt="cliente">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="img/logo1.png" class="d-block mx-auto" alt="cliente">
       </div>
       <div class="carousel-item" data-bs-interval="2250">
         <img src="img/logo2.png" class="d-block mx-auto" alt="cliente">
       </div>
       <div class="carousel-item">
-        <img src="img/logo3.jpg" class="d-block mx-auto" alt="cliente">
+        <img src="img/logo3.png" class="d-block mx-auto" alt="cliente">
       </div>
       <div class="carousel-item">
         <img src="img/logo4.png" class="d-block mx-auto" alt="Client 3">
@@ -123,6 +123,15 @@
       <div class="carousel-item">
         <img src="img/logo24.png" class="d-block mx-auto" alt="Client 3">
       </div>
+      <div class="carousel-item">
+        <img src="img/logo25.png" class="d-block mx-auto" alt="Client 3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/logo26.png" class="d-block mx-auto" alt="Client 3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/logo27.png" class="d-block mx-auto" alt="Client 3">
+      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -152,7 +161,6 @@
       <h4 class="h4Service">Dazzling Creativity:</h4><p class="paragraphService">From captivating visual campaigns to intuitive websites, we take creativity to the next level.</p>
       <h4 class="h4Service">Measurable Results:</h4><p class="paragraphService">Data and analytics drive our decisions, ensuring the success of each campaign and the performance of your website.</p>
       <h4 class="h4Service">Continuous Engagement:</h4><p class="paragraphService">Success is a journey. We commit to accompanying you every step of the way, adjusting strategies as your business evolves.</p>
-      <h4 class="h4Service">No Upfront Payment:</h4><p class="paragraphService">What truly sets us apart is our commitment to delivering excellence without upfront payment. We believe in earning your trust through results.</p>
     </p>
     <h3 class="h3Service">Join the Glow Hype Revolution</h3>
     <p class="paragraphService">If you're seeking a strategic partner who understands not only advertising and web development but also values a partnership built on trust, you're in the right place. Join the Glow Hype revolution, and let's take your business to new heights of success together!</p>
@@ -169,7 +177,7 @@
       <h2>Contact Us</h2>
       <p>Ready to take your marketing to the next level? Contact us today!</p>
       <!-- Formulario de contacto -->
-      <form action="#" method="post">
+      <form action="https://formsubmit.co/fabrigabiell@gmail.com" method="post">
         <div class="form-group">
           <label for="name">Your Name:</label>
           <input type="text" id="name" name="name" autocomplete="name" required>
@@ -186,6 +194,9 @@
         </div>
 
         <button type="submit">Send Message</button>
+        
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false" >
       </form>
     </div>
   </section>
@@ -202,7 +213,7 @@
   <script>
     $(document).ready(function(){
       $('#carouselExampleIndicators').carousel({
-        interval: 2250 // Ajusta el intervalo en milisegundos
+        interval: 2000 // Ajusta el intervalo en milisegundos
       });
     });
   </script>
