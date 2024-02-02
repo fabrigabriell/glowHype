@@ -4,12 +4,44 @@ body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Negro */
-  color: #fff; /* Texto blanco */
+  background-color: white; /* Negro */
+  color: black; /* Texto blanco */
 }
 
 .carousel-control, a, label, textarea, span {
   cursor: url(../img/pointer1.cur), auto;
+}
+
+/* Pre clientes */
+.itemNew {
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  font-size: 60px;
+  white-space: pre;
+  text-align: left;
+
+}
+
+.business {
+  margin: 40px;
+  padding: 10px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fotoGlow {
+  height: 630px;
+  width: 530px;
+  margin-top: 15px;
 }
 
 /* Font de los h */
@@ -56,7 +88,7 @@ h1, p {
 
 /* Estilos de la Barra de Navegación */
 nav {
-  background-color: #000; /* Negro */
+  background-color: black;
 }
 
 ul {
@@ -216,6 +248,39 @@ footer {
 
   .menu-icon {
     display: block;
+  }
+
+  .itemNew {
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    white-space: pre;
+    text-align: left;
+  
+  }
+  
+  .business {
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .contenedor img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .fotoGlow {
+    height: 330px;
+    max-height: 100%;
+    width: 230px;
+    margin-top: 5px;
   }
 
   nav li a {
