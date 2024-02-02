@@ -113,6 +113,27 @@ li a {
 li a:hover {
   background-color: #555; /* Gris oscuro */
 }
+/* Estilo Presentacion */
+.fila {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+}
+
+.elemento {
+text-align: center;
+justify-content: center;
+  padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+  border-radius: 10px;
+}
+
+.elemento img {
+  width: 50px; /* Ajusta el tamaño del icono según tus necesidades */
+  height: 50px;
+  margin-bottom: 10px;
+}
+
 
 /* Estilos del Carrusel */
 #carouselExampleInterval {
