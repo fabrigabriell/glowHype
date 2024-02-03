@@ -11,9 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <!-- JavaScrip -->
+  <link rel="stylesheet" href="javascript/script.js">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-
+  <script src="javascript/script.js"></script>
   <title>Glow Hype - Marketing Solutions</title>
 </head>
 <body>
@@ -65,40 +67,78 @@
       <img src="img/glow.png" alt="logoGlow" class="fotoGlow">
     </div>
     <div class="fila">
-      <div class="elemento">
-        <img src="img/icono1.png" alt="Icono 1">
-        <h3>Welcome to Glow Hype</h3>
-        <p>If you're looking for a strategic partner versed in advertising and web development, committed to a trust-based partnership, you're in the right spot. Join Glow Hype's revolution for success together!</p>
+      <div class="elemento" onclick="mostrarVentana('ventana1')">
+          <img src="img/icono1.png" alt="Icono 1">
+          <h3>Welcome to <br> Glow Hype</h3>
       </div>
-      <div class="elemento">
-        <img src="img/icono2.png" alt="Icono 2">
-        <h3> Our Philosophy </h3>
-        <p> Our philosophy revolves around innovation and creativity. We believe in telling your brand's unique story in the most impactful and memorable way possible. It's about creating authentic connections, leaving a lasting impression on your audience. </p>
+      <div class="elemento" onclick="mostrarVentana('ventana2')">
+          <img src="img/icono2.png" alt="Icono 2">
+          <h3>Our <br> Philosophy</h3>
       </div>
-      <div class="elemento">
-        <img src="img/icono3.png" alt="Icono 3">
-        <h3> Driving Your Business on Prominent Platforms </h3>
-        <p> Glow Hype specializes in the art and science of digital advertising. From Google Ads to LinkedIn, Instagram, Facebook, and TikTok, we navigate each platform with mastery. But that's not all - our web development service adds an extra layer of finesse to your online presence. </p>
+      <div class="elemento" onclick="mostrarVentana('ventana3')">
+          <img src="img/icono3.png" alt="Icono 3">
+          <h3>Driving Your <br> Business on <br> Prominent Platforms</h3>
       </div>
-    </div>
+  </div>
   
-    <div class="fila">
-      <div class="elemento">
-        <img src="img/icono4.png" alt="Icono 4">
-        <h3> Web Development </h3>
-        <p> Our expert web development team transforms your vision into reality. From visually appealing websites to efficient e-commerce platforms, we guarantee a beautiful, functional, and user-friendly online presence. </p>
+  <div class="fila">
+      <div class="elemento" onclick="mostrarVentana('ventana4')">
+          <img src="img/icono4.png" alt="Icono 4">
+          <h3>Web <br> Development</h3>
       </div>
-      <div class="elemento">
-        <img src="img/icono5.png" alt="Icono 5">
-        <h3> Why Choose Glow Hype? </h3>
-        <p> Glow Hype offers a personalized approach, dazzling creativity, measurable results, and continuous engagement. We delve into your business essence, crafting finely tuned strategies. Our creativity extends to captivating campaigns and intuitive websites. Focused on measurable results, data and analytics drive our decisions. We commit to continuous engagement, accompanying and adapting strategies as your business evolves. </p>
+      <div class="elemento" onclick="mostrarVentana('ventana5')">
+          <img src="img/icono5.png" alt="Icono 5">
+          <h3>Why Choose <br> Glow Hype?</h3>
       </div>
-      <div class="elemento">
-        <img src="img/icono6.png" alt="Icono 6">
-        <h3> Join the Glow Hype Revolution </h3>
-        <p> Find a strategic partner at Glow Hype, understanding advertising, web development, and valuing trust-based partnerships. Join the Glow Hype revolution to elevate your business to new heights of success together! </p>
+      <div class="elemento" onclick="mostrarVentana('ventana6')">
+          <img src="img/icono6.png" alt="Icono 6">
+          <h3>Join the <br> Glow Hype Revolution</h3>
       </div>
+  </div>
+  
+  <div id="ventana1" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>If you're looking for a strategic partner versed in advertising and web development, committed to a trust-based partnership, you're in the right spot. Join Glow Hype's revolution for success together!</p>
+      <button onclick="cerrarVentana('ventana1')">Cerrar</button>
     </div>
+  </div>
+  
+  <div id="ventana2" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>Revolves around innovation and creativity. We believe in telling your brand's unique story in the most impactful and memorable way possible. It's about creating authentic connections, leaving a lasting impression on your audience.</p>
+      <button onclick="cerrarVentana('ventana2')">Cerrar</button>
+    </div>
+  </div>
+  
+  <div id="ventana3" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>Glow Hype excels in digital advertising across platforms like Google Ads, LinkedIn, Instagram, Facebook, and TikTok. Our web development service enhances your online presence with finesse and expertise.</p>
+      <button onclick="cerrarVentana('ventana3')">Cerrar</button>
+    </div>
+  </div>
+  
+  <div id="ventana4" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>Our expert web development team transforms your vision into reality. From visually appealing websites to efficient e-commerce platforms, we guarantee a beautiful, functional, and user-friendly online presence.</p>
+      <button onclick="cerrarVentana('ventana4')">Cerrar</button>
+    </div>
+  </div>
+  
+  <div id="ventana5" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>GGlow Hype offers personalized strategies, creative brilliance, and measurable results. We craft finely-tuned approaches, adapt strategies, and ensure measurable success in your evolving business</p>
+      <button onclick="cerrarVentana('ventana5')">Cerrar</button>
+    </div>
+  </div>
+  
+  <div id="ventana6" class="ventana oculto">
+    <div class="contenidoVentana">
+      <p>Find a strategic partner at Glow Hype, understanding advertising, web development, and valuing trust-based partnerships. Join the Glow Hype revolution to elevate your business to new heights of success together!</p>
+      <button onclick="cerrarVentana('ventana6')">Cerrar</button>
+    </div>
+  </div>
+  <h3 class="subrayado-naranja">Press the titles for more details.</h3>
+
   <img src="img/logosAds.png" alt="logoVarios" class="business">
 
   <!-- Sección Home con Carrusel de Clientes -->
@@ -229,7 +269,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+
+  <!-- JavaScript -->
+  <script src="javascript/script.js"></script>
+
 <!-- Script para el carrusel -->
   <script>
     $(document).ready(function(){

@@ -81,11 +81,6 @@ header {
   max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
 }
 
-/* Estilos del Texto en el Encabezado */
-h1, p {
-  margin: 10px 0;
-}
-
 /* Estilos de la Barra de Navegación */
 nav {
   background-color: black;
@@ -122,10 +117,9 @@ li a:hover {
 }
 
 .elemento {
-text-align: center;
-justify-content: center;
-  padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
-  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 .elemento img {
@@ -135,6 +129,62 @@ justify-content: center;
 }
 
 
+/* Intento 1000 */
+.ventana {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff6600;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center; /* Centra el contenido en la ventana */
+}
+
+.contenidoVentana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ventana button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Ajusta el tamaño del texto del botón */
+  margin-top: 10px; /* Añade un margen superior al botón */
+}
+
+.abierto {
+  display: block;
+}
+
+.ventana.abierto {
+  max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilo para frase h3 inicio */
+.subrayado-naranja {
+  font-size: 15px;
+  text-decoration: underline 1px #ff6600;
+  padding: 10px;
+}
 /* Estilos del Carrusel */
 #carouselExampleInterval {
   background-color: white;
@@ -262,13 +312,23 @@ footer {
     padding: 50px;
   }
 
+  .ventana {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .ventana button {
+    padding: 8px;
+    font-size: 12px; /* Ajusta el tamaño del texto del botón en pantallas pequeñas */
+  }
+
+  .ventana p {
+    margin-bottom: 0;
+  }
+
 
   ul.active {
     display: flex;
-  }
-
-  .menu-icon {
-    display: block;
   }
 
   .itemNew {
@@ -302,6 +362,30 @@ footer {
     max-height: 100%;
     width: 230px;
     margin-top: 5px;
+  }
+
+  .elemento {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .elemento img {
+    width: 25px; /* Ajusta el tamaño del icono según tus necesidades */
+    height: 25px;
+    margin-bottom: 5px;
+  }
+
+  .elemento h3 {
+    font-size: 15px;
+    text-decoration: underline 1px #cc5500;
+  }
+
+  .elemento p {
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
   }
 
   nav li a {
